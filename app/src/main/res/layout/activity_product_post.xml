@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.ProductPostActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical"
+                android:background="@color/red"
+                android:layout_marginBottom="20dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="CREAR PRODUCTO"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/scrollLayout"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/scrollImage">
+
+                            <LinearLayout
+                                android:id="@+id/uploadPhotoLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_search"
+                                    android:layout_margin="20dp"/>
+                                <ImageView
+                                    android:id="@+id/photo2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_search"
+                                    android:layout_margin="20dp"/><ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_search"
+                                android:layout_margin="20dp"/><ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_search"
+                                android:layout_margin="20dp"/><ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_search"
+                                android:layout_margin="20dp"/><ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_search"
+                                android:layout_margin="20dp"/><ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_search"
+                                android:layout_margin="20dp"/><ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_search"
+                                android:layout_margin="20dp"/><ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_search"
+                                android:layout_margin="20dp"/>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnUploadPhotos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="upload photos"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditTextWhite"
+                        android:layout_marginBottom="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/productTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Title"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditTextWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/productDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:height="100dp"
+                            android:hint="Description"
+                            android:gravity="left"
+                            android:inputType="textMultiLine"
+                            android:maxLines="4"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditTextWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/productPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Price"
+                            android:inputType="numberSigned" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_price_euro"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#888888"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/productPostMenu">
+
+                <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/menuCategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemIconTint="@color/white"
+                    app:itemTextColor="@color/white"
+                    app:menu="@menu/product_post_menu">
+                </com.google.android.material.navigation.NavigationView>
+            </FrameLayout>
+
+
+            <Button
+                android:id="@+id/btnPublicar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Publicar"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/red"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/IconBackProduct"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_left"
+        android:layout_margin="20dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

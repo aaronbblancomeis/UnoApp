@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemCategoria"
+        android:title="Categoria"
+        app:showAsAction="collapseActionView">
+
+        <menu>
+            <item
+                android:id="@+id/categoriaRopa"
+                android:title="Ropa"/>
+
+            <item
+                android:id="@+id/categoriaCalzado"
+                android:title="Calzado"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/itemMarca"
+        android:title="Marca"/>
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "52076820688",
+    "firebase_url": "https://unoshopdistric-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "unoshopdistric",
+    "storage_bucket": "unoshopdistric.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52076820688:android:b105dd04d5ba893e0006d5",
+        "android_client_info": {
+          "package_name": "com.uno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52076820688-afjc2k3jij3hc2btknuid8o2hg7ot9e5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uno",
+            "certificate_hash": "cd24eeebe36bfc43bf248f3eb54275430925e791"
+          }
+        },
+        {
+          "client_id": "52076820688-c368ingsmfckj1uut41qp4pgq17kkehs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0aJOsEdiQktrHqHTXoHHfc7fFhio10Ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52076820688-c368ingsmfckj1uut41qp4pgq17kkehs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
